@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "OpenWaterDetector",
+  "version": "${version}",
+  "name": "OpenWaterDetector",
+  "description": "A Fabric mod to inform the user whether they are fishing in open water.",
+  "authors": [
+    "Deathcofi"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/OpenWaterDetector/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ro.cofi.openwaterdetector.client.OpenWaterDetectorClient"
+    ],
+    "main": [
+      "ro.cofi.openwaterdetector.OpenWaterDetector"
+    ]
+  },
+  "mixins": [
+    "OpenWaterDetector.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
